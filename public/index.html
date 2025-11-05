@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GitHub Insights — Demo UI</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1>GitHub Repo Insights (demo)</h1>
+      <div class="controls">
+        <input id="owner" placeholder="Enter GitHub Username" />
+        <button id="fetch">Fetch repos</button>
+      </div>
+
+      <section id="results" class="hidden">
+        <h2 id="ownerTitle"></h2>
+        <canvas id="langChart" width="400" height="200"></canvas>
+        <ul id="repoList"></ul>
+      </section>
+
+      <div id="message" class="message"></div>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
